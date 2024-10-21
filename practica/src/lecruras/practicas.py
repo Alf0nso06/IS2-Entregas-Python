@@ -3,19 +3,20 @@ Created on 20 oct 2024
 
 @author: AGUSTIN
 '''
-def contador (fichero,sep,cad):
+
+import re
+separador=r'[;, \n]+'
+
+def contador (fichero,cad):
     with open(fichero, 'r') as fichero:
-            # Leer el contenido del fichero
             contenido = fichero.read().lower()
-            # Separar el contenido utilizando el separador dado
-            terminos = contenido.split(sep)
-            # Contar las ocurrencias de la palabra buscada
-            contador = terminos.count(cad)
+            terminos = re.split(separador,contenido)
+            contador = terminos.count(cad.lower())
             return contador
+ 
+ 
     
-    
-    
-print(contador('lin_quijote.txt','n/', 'Quijote'))
+print(contador('lin_quijote.txt', 'Quijote'))
 
 
 def encontrar_lineas_con_cadena(nombre_fichero, cad):
@@ -44,6 +45,15 @@ def palabras_unicas(nombre_fichero):
     
     return list(palabras_unicas)
 print(palabras_unicas("lin_quijote.txt"))
+
+
+def longitud_promedio_lineas(file_path: str,) -> float:
+    with open(file_path, 'r') as file:
+        lineas = file.readlines()
+    
+    longitudes = [len(line.strip().split(",")) for line in lineas]
+    return sum(longitudes) / len(longitudes)
+     
 
 
 
