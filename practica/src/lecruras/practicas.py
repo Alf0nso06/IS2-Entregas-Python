@@ -44,7 +44,7 @@ def palabras_unicas(nombre_fichero):
             palabras_unicas.update(palabras)
     
     return list(palabras_unicas)
-print(palabras_unicas("lin_quijote.txt"))
+print(palabras_unicas("archivo_palabras.txt"))
 
 
 def longitud_promedio_lineas(file_path: str,) -> float:
@@ -54,7 +54,7 @@ def longitud_promedio_lineas(file_path: str,) -> float:
     longitudes = [len(line.strip().split(",")) for line in lineas]
     return sum(longitudes) / len(longitudes)
      
-
+print(longitud_promedio_lineas("palabras_random.csv"))
 
 
 
