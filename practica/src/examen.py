@@ -6,10 +6,11 @@ from itertools import count
 def p2 (n,k,i=1):
     resultado = 1
     if n>0 and i>0 and k>0 :
-        if n >= k:
-            for r in range(i,k-2):
-                resultado*=(n-r+1)
-            return resultado
+        if i<k+1:
+            if n >= k:
+                for r in range(i,k-2):
+                    resultado*=(n-r+1)
+                return resultado
 
 
 
