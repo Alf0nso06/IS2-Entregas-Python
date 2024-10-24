@@ -50,5 +50,5 @@ print(c2(-2,2))
 print(s2(5,4))
 print(s2(-3,4))
 #funcion4
-print(palabrasmascomunes('lecruras/archivo_palabras.txt', 5))
-print(palabrasmascomunes('lecruras/archivo_palabras.txt', -3))
+print(palabrasmascomunes('lecturas/archivo_palabras.txt', 5))
+print(palabrasmascomunes('lecturas/archivo_palabras.txt', -3))
