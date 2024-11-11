@@ -9,11 +9,4 @@
 	<natures>
 		<nature>org.python.pydev.pythonNature</nature>
 	</natures>
-	<linkedResources>
-		<link>
-			<name>practicas</name>
-			<type>2</type>
-			<location>C:/Users/AGUSTIN/Desktop/Nueva carpeta (4)</location>
-		</link>
-	</linkedResources>
 </projectDescription>
