@@ -40,7 +40,7 @@ class AgregadoLineal(ABC, Generic[E]):
         assert len(self._elements) > 0, 'El agregado está vacío'
         return self._elements.pop(0)
     
-    
+    º
     def remove_all(self) -> List[E]:
         removed_elements = []
         while not self.is_empty:
