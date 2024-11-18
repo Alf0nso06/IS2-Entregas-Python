@@ -23,7 +23,7 @@ def c2(n, k):
 def s2(n,k):
     if k and n > 0:
         resultado = 0
-        for r in range(0,k):
+        for r in range(0,k+1):
             binomio= math.comb(k, r)
             resultado+= ((-1)**(r))*binomio*(k-r)**(n+1)
         return math.factorial(k)/(n*(math.factorial(k+2)))*resultado
