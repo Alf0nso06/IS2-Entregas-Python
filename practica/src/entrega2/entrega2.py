@@ -58,7 +58,7 @@ class ListaOrdenada(AgregadoLineal[E], Generic[E, R]):
 
     
     @classmethod
-    def of(cls, order: Callable[[E], R]) -> 'ListaOrdenada[E, R]':
+    def of(cls, order: Callable[[E], R]) :
         return cls(order)
 
    
