@@ -93,6 +93,7 @@ class RedGenica(Grafo[str, RelacionGenAGen]):
         return red
 #test genagen
 if __name__ == "__main__":
+    print("test de gen a gen")
     print(Gen.of("GenA", "TipoX", 10, "Cromosoma1"))
     print(Gen.parse("GenB, TipoY, 15, Cromosoma2"))
     print(Gen.parse("GenC, TipoZ, -5, Cromosoma3"))
@@ -106,7 +107,7 @@ if __name__ == "__main__":
 
 #test para gen
 if __name__ == "__main__":
-   
+    print("test de gen")
     gen1 = Gen.of("GenA", "TipoX", 10, "Cromosoma1")
     if gen1:
         print(gen1)
@@ -130,6 +131,7 @@ if __name__ == "__main__":
         print("Cadena inválida para Gen.parse")
 #test para RedGen
 if __name__ == "__main__":
+    print("test de red generica")
     red = RedGenica.parse('genes.txt', 'red_genes.txt', es_dirigido=False)
     print(red)
     inicio = "KRAS"
@@ -161,7 +163,7 @@ if __name__ == "__main__":
     if camino:
        print(f"Camino encontrado: {' -> '.join(camino)}")
     else:
-     print("No se encontró un camino entre KRAS y PIK3CA.")
+     print("No hay camino")
 
         
     if camino:
